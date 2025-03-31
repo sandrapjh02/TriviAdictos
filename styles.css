@@ -233,3 +233,182 @@ button:hover {
 .star-button:hover {
     background-color: #003D33;
 }
+
+
+/* ===== ESTILOS ESPECÍFICOS PARA INDEX4 ===== */
+.pagina-rosa {
+    background-color: #ED3C80;
+    padding-top: 100px; /* Espacio para el header */
+    min-height: 100vh;
+}
+
+/* Header - Versión mejorada */
+.header-preguntas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ECBA09;
+    z-index: 500;
+    padding: 0 20px;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+.logo-encabezado-preguntas img {
+    height: 80px;
+}
+
+/* Contenedor de puntaje y tiempo - Alineado a la izquierda del botón */
+.puntaje-tiempo {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5d1b6a;
+    margin-left: auto; /* Empuja este elemento a la izquierda */
+    margin-right: 20px; /* Espacio después del logo */
+}
+
+/* Botón Salir - Centrado vertical con margen */
+.btn-salir {
+    background-color: #076461;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+    font-weight: bold;
+    margin-right: 20px; /* Espacio a la derecha */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-salir:hover {
+    background-color: #05403e;
+}
+
+/* Contenedor de pregunta */
+.contenedor-pregunta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.pregunta-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pregunta-box h2 {
+    color: #5d1b6a;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Opciones de respuesta - Sin borde verde */
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.opcion {
+    background-color: white;
+    border: none; /* Eliminado el borde verde */
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.opcion:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* Feedback y botón siguiente */
+.feedback {
+    margin-top: 20px;
+}
+
+#mensaje-feedback {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    min-height: 27px;
+}
+
+.btn-siguiente {
+    background-color: #5d1b6a;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    opacity: 0.7;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.btn-siguiente.activo {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn-siguiente.activo:hover {
+    background-color: #3a1045;
+}
+
+/* Efectos para respuestas */
+.opcion.correcta {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+.opcion.incorrecta {
+    background-color: #F44336 !important;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-preguntas {
+        height: 80px;
+        padding: 0 15px;
+    }
+    
+    .logo-encabezado-preguntas img {
+        height: 60px;
+    }
+    
+    .puntaje-tiempo {
+        font-size: 16px;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    
+    .btn-salir {
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+    
+    .opciones {
+        grid-template-columns: 1fr;
+    }
+    
+    .pregunta-box h2 {
+        font-size: 20px;
+    }
+}
