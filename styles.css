@@ -1,248 +1,250 @@
-/* Estilos generales (Index)*/ 
+/* ========== ESTILOS PARA INDEX.HTML (PÁGINA PRINCIPAL) ========== */
+/* Estructura principal de la página de inicio */
 body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    flex-direction: column; /* Para que el logo esté arriba y el container abajo */
-    align-items: center;
-    height: 100vh;
-    background-color: #ECBA09;
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: column; /* Organiza elementos en columna */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #ECBA09; /* Fondo amarillo característico */
 }
 
-/* Contenedor principal (Index)*/
+/* Contenedor principal que agrupa logo y botón */
 .container {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
-    text-align: center;  /* Centra el texto */
-    gap: 20px; /* Espaciado entre los elementos */
-        
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: center; /* Centra elementos horizontalmente */
+    text-align: center; /* Alinea texto al centro */
+    gap: 20px; /* Espacio entre elementos hijos */
 }
 
-/* Contenedor-Ingreso (Index2)*/
-.container-login{
+/* Estilo del logo principal */
+.logo {
+    width: 500px; /* Ancho fijo pero responsive */
+    max-width: 100%; /* Se adapta al contenedor */
+    align-items: center; /* Centra la imagen */
+}
+
+/* Estilo base para todos los botones */
+button {
+    background-color: #076461; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    transition: background 0.3s; /* Transición suave al hover */
+    align-items: center;
+}
+
+/* Efecto hover para botones */
+button:hover {
+    background-color: #002d26; /* Verde más oscuro al pasar el mouse */
+}
+
+/* ========== ESTILOS PARA INDEX2.HTML (INGRESO) ========== */
+/* Contenedor del formulario de ingreso */
+.container-login {
     display: grid;
     grid-template-columns: auto 1fr auto; /* Label | Input (flexible) | Botón */
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    
-}
-
-/* Estilos para el Header en (Index3)*/
-#header-amarillo-menu{
-    display: flex; /* Usa flexbox para simplificar la estructura */
-    justify-content: space-between; /* Distribuye los elementos */
-    align-items: center; /* Centra verticalmente */
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #ECBA09;
-    z-index: 500; /* Asegura que el header esté por encima de otros elementos */
-    padding: 0 10px; /* Solo padding horizontal */
-}
-    
-/* Estilos para el Header en (Index3)*/
-#header-amarillo-preguntas{
-    display: flex; /* Usa flexbox para simplificar la estructura */
-    justify-content: space-between; /* Distribuye los elementos */
-    align-items: center; /* Centra verticalmente */
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #ECBA09;
-    z-index: 500; /* Asegura que el header esté por encima de otros elementos */
-    padding: 0 10px; /* Solo padding horizontal */
-} 
-
-
-/* Imagen del logo (Index) */
-.logo {
-    width: 500px;
-    max-width: 100%;
-    align-items: center;
-    
-}
-
-/* Imagen del logo (Index2) */
-.logo-ingreso {
-    margin-bottom: 20px; /* Espacio entre el logo y el contenedor */
-    width: 500px; /* Ajusta el tamaño del logo */
-    max-width: 100%; /* Ajusta el tamaño del logo */
-}
-
-/* Imagen del logo (Index3) */
-.logo-encabezado img {
-    height: 100px; /* Tamaño del logo */
-    display: block; /* Evita espacios extra alrededor de la imagen */
-    margin-left: 20px; /* Espaciado desde el borde izquierdo */
-    
-}
-
-/* Imagen del logo Preguntas(Index4) */
-.logo-encabezado-preguntas img {
-    height: 100px;
-    display: block; /* Evita espacios extra alrededor de la imagen */
-    margin-left: 20px; /* Espaciado desde el borde izquierdo */
-}
-
-/* Escoge tu nivel e icon(Index3) */
-.header-right{
-    display: flex; /* Flexbox es más eficiente aquí */
     align-items: center; /* Centra verticalmente los elementos */
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    gap: 10px; /* Espaciado entre los elementos */
-    color: #5d1b6a; /* Color del texto */
-    
+    gap: 10px; /* Espacio entre elementos */
+    padding: 10px; /* Espaciado interno */
 }
 
-h1 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20;
-    
+/* Logo en la página de ingreso */
+.logo-ingreso {
+    margin-bottom: 20px; /* Espacio inferior */
+    width: 500px; /* Mismo tamaño que logo principal */
+    max-width: 100%; /* Responsive */
 }
 
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    display: flex; /* Alinea los elementos en fila */
-    align-items: center; /* Alinea el icono a la derecha */
-    margin: 20px; /* Espacio a la derecha */
-      
-}
-
-
-/* Estilo del label (Index2) */
+/* Estilo para las etiquetas del formulario */
 .label {
     font-size: 25px;
     font-weight: bold;
     color: white;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-   
+    white-space: nowrap; /* Evita saltos de línea */
 }
 
-/* Estilo del input (Index2)*/
+/* Campo de entrada de texto */
 .input {
-    width: 150px;
-    height: 25px;
-    border: 2px solid #076461;
-    border-radius: 10px;
-    padding: 5px;
+    width: 150px; /* Ancho mínimo */
+    height: 25px; /* Altura fija */
+    border: 2px solid #076461; /* Borde verde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 5px; /* Espaciado interno */
     font-size: 16px;
-    outline: none;
-    flex-grow: 1; /* Ajusta el tamaño del input */
+    outline: none; /* Elimina el borde al enfocar */
+    flex-grow: 1; /* Ocupa el espacio disponible */
 }
 
-/* Botón de jugar (Index2) */
-button {
-    background-color: #076461;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: auto;
-    transition: background 0.3s;
-    align-items: center;
-}
-
-/* Botón con estrella (Index2)*/
+/* Botón con icono de estrella */
 .star-button {
-    width: 50px;
-    height: 40px;
-    background-color: #076461;
+    width: 50px; /* Ancho fijo */
+    height: 40px; /* Altura fija */
+    background-color: #076461; /* Verde oscuro */
     color: white;
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid #076461;
-    border-radius: 8px;
+    border: 2px solid #076461; /* Borde del mismo color */
+    border-radius: 8px; /* Bordes menos redondeados */
     cursor: pointer;
-    transition: 0.3s;
-    justify-content: center;
-    display: flex; /* Alinea los elementos en fila */
-    align-items: center; /* Centra verticalmente */
-    gap: 8px; /* Espaciado entre los elementos */
-     
-    
+    transition: 0.3s; /* Transición suave */
+    justify-content: center; /* Centra contenido horizontal */
+    display: flex;
+    align-items: center; /* Centra contenido vertical */
+    gap: 8px; /* Espacio entre icono y texto (si lo hubiera) */
 }
 
-/* Body Blanco(Index3) */
+/* Efecto hover para botón estrella */
+.star-button:hover {
+    background-color: #003D33; /* Verde más oscuro */
+}
+
+/* ========== ESTILOS PARA INDEX3.HTML (CATEGORÍAS) ========== */
+/* Fondo blanco para el área de contenido */
 .pagina-blanca {
-    background-color: white !important;
+    background-color: white !important; /* Fuerza el fondo blanco */
 }
 
-
-/* Body Rosa(Index4) */
-.pagina-rosa {
-    font-family: Arial, sans-serif;
-    background-color: #ED3C80 !important;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Header amarillo fijo en la parte superior */
+#header-amarillo-menu {
+    display: flex;
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100px; /* Altura fija */
+    background-color: #ECBA09; /* Amarillo característico */
+    z-index: 500; /* Asegura que esté por encima de otros elementos */
+    padding: 0 10px; /* Espaciado horizontal */
 }
 
-/* Categorías */
+/* Logo en el header */
+.logo-encabezado img {
+    height: 100px; /* Altura igual al header */
+    display: block; /* Elimina espacio inferior */
+    margin-left: 20px; /* Espaciado izquierdo */
+}
+
+/* Contenedor del lado derecho del header */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea elementos a la derecha */
+    gap: 10px; /* Espacio entre elementos */
+
+}
+
+/* Icono de menú hamburguesa */
+.boton-inicio-index3 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer; /* Cambia el cursor al pasar */
+    display: flex;
+    align-items: center;
+    margin: 20px; /* Espaciado alrededor */
+    background-color: #076461; /* Verde oscuro */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 28px; /* Ajuste vertical */
+    font-weight: bold;
+    margin-right: 20px; /* Espacio del borde */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s; /* Transición suave */
+}
+/* Efecto hover para boton-inicio-index3 */
+.boton-inicio-index3:hover {
+    background-color: #05403e; /* Verde más oscuro */
+
+}
+/* Contenedor de categorías */
 .categories {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: center; /* Centra las categorías */
+    gap: 20px; /* Espacio entre categorías */
+    margin-top: 20px; /* Espacio superior */
 }
 
+/* Tarjeta de categoría individual */
 .category {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Apila imagen y botón */
+    align-items: center; /* Centra horizontalmente */
     background: white;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px; /* Espaciado interno */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
+/* Imagen de la categoría */
 .category img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    border: 2px solid black;
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
+    border-radius: 15px; /* Igual que el contenedor */
+    border: 2px solid black; /* Borde negro */
 }
 
+/* Botón de categoría */
 .category-btn {
-    background-color: #0F6C64;
+    background-color: #0F6C64; /* Verde más claro */
     color: white;
     font-weight: bold;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes muy redondeados */
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 10px; /* Espacio sobre el botón */
 }
 
+    .titulo-tema-favorito {
+    text-align: center;
+    color:#ED3C80;
+    font-size: 200%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 8%;
+    
+    }
 
-button:hover {
-    background-color: #002d26;
-}
 
-.star-button:hover {
-    background-color: #003D33;
-}
-
-
-/* ===== ESTILOS ESPECÍFICOS PARA INDEX4 ===== */
+/* ========== ESTILOS PARA INDEX4.HTML (PREGUNTA) ========== */
+/* Fondo rosa para la página de preguntas */
 .pagina-rosa {
-    background-color: #ED3C80;
-    padding-top: 100px; /* Espacio para el header */
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ED3C80 !important; /* Fuerza el color rosa */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 100px; /* Compensa el header fijo */
+    min-height: 100vh; /* Mínimo alto de pantalla */
 }
 
-/* Header - Versión mejorada */
+/* Header alternativo para preguntas */
+#header-amarillo-preguntas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ECBA09;
+    z-index: 500;
+    padding: 0 10px;
+}
+
+/* Versión mejorada del header de preguntas */
 .header-preguntas {
     display: flex;
     justify-content: space-between;
@@ -254,160 +256,179 @@ button:hover {
     background-color: #ECBA09;
     z-index: 500;
     padding: 0 20px;
-    box-sizing: border-box; /* Incluye padding en el ancho total */
+    box-sizing: border-box; /* Incluye padding en el ancho */
 }
 
+/* Logo en el header de preguntas */
 .logo-encabezado-preguntas img {
-    height: 80px;
+    height: 80px; /* Más pequeño que en otras páginas */
+    display: block;
+    margin-left: 20px;
 }
 
-/* Contenedor de puntaje y tiempo - Alineado a la izquierda del botón */
+/* Contenedor de puntaje y temporizador */
 .puntaje-tiempo {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Espacio entre elementos */
     font-size: 20px;
     font-weight: bold;
-    color: #5d1b6a;
-    margin-left: auto; /* Empuja este elemento a la izquierda */
-    margin-right: 20px; /* Espacio después del logo */
+    color: #5d1b6a; /* Color morado */
+    margin-left: auto; /* Empuja a la derecha */
+    margin-right: 20px; /* Espacio del borde */
 }
 
-/* Botón Salir - Centrado vertical con margen */
+/* Botón para salir del juego */
 .btn-salir {
-    background-color: #076461;
+    background-color: #076461; /* Verde oscuro */
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 28px; /* Ajuste vertical */
     font-weight: bold;
-    margin-right: 20px; /* Espacio a la derecha */
+    margin-right: 20px; /* Espacio del borde */
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s; /* Transición suave */
 }
 
+/* Efecto hover para botón salir */
 .btn-salir:hover {
-    background-color: #05403e;
+    background-color: #05403e; /* Verde más oscuro */
 }
 
-/* Contenedor de pregunta */
+/* Contenedor principal de la pregunta */
 .contenedor-pregunta {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
     padding: 20px;
     text-align: center;
 }
 
+/* Caja que contiene el texto de la pregunta */
 .pregunta-box {
     background-color: white;
-    border-radius: 15px;
-    padding: 50px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 50px; /* Espaciado interno generoso */
+    margin-bottom: 30px; /* Espacio inferior */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
+/* Texto de la pregunta */
 .pregunta-box h2 {
-    color: #5d1b6a;
+    color: #5d1b6a; /* Morado */
     font-size: 24px;
-    margin: 0;
+    margin: 0; /* Elimina margen por defecto */
 }
 
-/* Opciones de respuesta - Sin borde verde */
+/* Contenedor de opciones de respuesta */
 .opciones {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 15px; /* Espacio entre opciones */
+    margin-bottom: 30px; /* Espacio inferior */
 }
 
+/* Estilo de cada opción de respuesta */
 .opcion {
     background-color: white;
-    border: none; /* Eliminado el borde verde */
-    border-radius: 12px;
-    padding: 20px;
+    border: none; /* Sin borde por defecto */
+    border-radius: 12px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
     font-size: 18px;
     cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s; /* Transición para hover y selección */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
+/* Efecto hover para opciones */
 .opcion:hover {
-    background-color: #f8f8f8;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    background-color: #f8f8f8; /* Fondo gris muy claro */
+    transform: translateY(-3px); /* Efecto de levantar */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15); /* Sombra más pronunciada */
 }
 
-/* Feedback y botón siguiente */
+/* Estilo para opción correcta */
+.opcion.correcta {
+    background-color: #4CAF50 !important; /* Verde */
+    color: white;
+}
+
+/* Estilo para opción incorrecta */
+.opcion.incorrecta {
+    background-color: #F44336 !important; /* Rojo */
+    color: white;
+}
+
+/* Área de feedback */
 .feedback {
-    margin-top: 20px;
+    margin-top: 20px; /* Espacio superior */
 }
 
+/* Mensaje de feedback */
 #mensaje-feedback {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-bottom: 15px;
-    min-height: 27px;
+    margin-bottom: 15px; /* Espacio inferior */
+    min-height: 27px; /* Altura mínima para evitar saltos */
 }
 
+/* Botón para siguiente pregunta */
 .btn-siguiente {
-    background-color: #5d1b6a;
+    background-color: #5d1b6a; /* Morado */
     color: white;
-    padding: 12px 30px;
+    padding: 12px 30px; /* Espaciado interno */
     font-size: 18px;
-    border-radius: 25px;
+    border-radius: 25px; /* Bordes muy redondeados */
     border: none;
-    opacity: 0.7;
-    transition: all 0.3s;
-    cursor: default;
+    opacity: 0.7; /* Parcialmente transparente */
+    transition: all 0.3s; /* Transición suave */
+    cursor: default; /* Cursor normal (no clickeable) */
 }
 
+/* Estado activo del botón siguiente */
 .btn-siguiente.activo {
-    opacity: 1;
-    cursor: pointer;
+    opacity: 1; /* Opaco */
+    cursor: pointer; /* Cursor clickeable */
 }
 
+/* Efecto hover para botón siguiente activo */
 .btn-siguiente.activo:hover {
-    background-color: #3a1045;
+    background-color: #3a1045; /* Morado más oscuro */
 }
 
-/* Efectos para respuestas */
-.opcion.correcta {
-    background-color: #4CAF50 !important;
-    color: white;
-}
-
-.opcion.incorrecta {
-    background-color: #F44336 !important;
-    color: white;
-}
-
-/* Responsive */
+/* ========== MEDIA QUERIES (PARA INDEX4) ========== */
 @media (max-width: 768px) {
+    /* Ajustes para header en móviles */
     .header-preguntas {
-        height: 80px;
-        padding: 0 15px;
+        height: 80px; /* Más compacto */
+        padding: 0 15px; /* Menos espaciado */
     }
     
+    /* Logo más pequeño en móviles */
     .logo-encabezado-preguntas img {
         height: 60px;
     }
     
+    /* Ajustes para puntaje y tiempo */
     .puntaje-tiempo {
-        font-size: 16px;
-        gap: 10px;
-        margin-left: 10px;
+        font-size: 16px; /* Texto más pequeño */
+        gap: 10px; /* Menos espacio entre elementos */
+        margin-left: 10px; /* Menos margen */
     }
     
+    /* Botón salir más compacto */
     .btn-salir {
-        padding: 8px 16px;
-        margin-right: 10px;
+        padding: 8px 16px; /* Menos espaciado */
+        margin-right: 10px; /* Menos margen */
     }
     
+    /* Opciones en una sola columna */
     .opciones {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una columna */
     }
     
+    /* Texto de pregunta más pequeño */
     .pregunta-box h2 {
         font-size: 20px;
     }
