@@ -16,7 +16,7 @@ body {
     flex-direction: column; /* Alinea los elementos en columna */
     align-items: center; /* Centra horizontalmente */
     text-align: center;  /* Centra el texto */
-    gap: 20px; /* Espaciado entre los elementos */
+    gap: 20px; /* Espaciado entre los elementos */ 
         
 }
 
@@ -42,7 +42,8 @@ body {
     height: 100px;
     background-color: #ECBA09;
     z-index: 500; /* Asegura que el header esté por encima de otros elementos */
-    padding: 0 10px; /* Solo padding horizontal */
+    padding: 0 10px; /* Solo padding horizontal */ 
+    
 }
     
 /* Estilos para el Header en (Index3)*/
@@ -66,6 +67,7 @@ body {
     width: 500px;
     max-width: 100%;
     align-items: center;
+    
     
 }
 
