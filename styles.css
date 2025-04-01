@@ -110,7 +110,7 @@ button:hover {
 /* ========== ESTILOS PARA INDEX3.HTML (CATEGORÍAS) ========== */
 /* Fondo blanco para el área de contenido */
 .pagina-blanca {
-    background-color: white !important; /* Fuerza el fondo blanco */
+    background-color:#ED3C80 !important; /* Fuerza el fondo blanco */
 }
 
 /* Header amarillo fijo en la parte superior */
@@ -209,7 +209,7 @@ button:hover {
 
     .titulo-tema-favorito {
     text-align: center;
-    color:#ED3C80;
+    color:white;
     font-size: 200%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 8%;
@@ -258,14 +258,26 @@ button:hover {
     padding: 0 20px;
     box-sizing: border-box; /* Incluye padding en el ancho */
 }
-
+.titulo-historia{
+    font-size: 200%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    margin: 0;
+    position: absolute;
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste fino para centrar */
+}
 /* Logo en el header de preguntas */
 .logo-encabezado-preguntas img {
     height: 80px; /* Más pequeño que en otras páginas */
     display: block;
     margin-left: 20px;
 }
-
+.logo-encabezado-preguntas {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el título */
+}
 /* Contenedor de puntaje y temporizador */
 .puntaje-tiempo {
     display: flex;
@@ -330,7 +342,8 @@ button:hover {
 
 /* Estilo de cada opción de respuesta */
 .opcion {
-    background-color: white;
+    background-color:#ffffff;
+    color:#49007E;
     border: none; /* Sin borde por defecto */
     border-radius: 12px; /* Esquinas redondeadas */
     padding: 20px; /* Espaciado interno */
@@ -338,11 +351,12 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s; /* Transición para hover y selección */
     box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Sombra suave */
+
 }
 
 /* Efecto hover para opciones */
 .opcion:hover {
-    background-color: #f8f8f8; /* Fondo gris muy claro */
+    background-color:white; /* Fondo gris muy claro */
     transform: translateY(-3px); /* Efecto de levantar */
     box-shadow: 0 5px 10px rgba(0,0,0,0.15); /* Sombra más pronunciada */
 }
@@ -375,13 +389,12 @@ button:hover {
 
 /* Botón para siguiente pregunta */
 .btn-siguiente {
-    background-color: #5d1b6a; /* Morado */
+    background-color: #076461; /* Verde oscuro */
     color: white;
     padding: 12px 30px; /* Espaciado interno */
     font-size: 18px;
     border-radius: 25px; /* Bordes muy redondeados */
     border: none;
-    opacity: 0.7; /* Parcialmente transparente */
     transition: all 0.3s; /* Transición suave */
     cursor: default; /* Cursor normal (no clickeable) */
 }
@@ -394,7 +407,7 @@ button:hover {
 
 /* Efecto hover para botón siguiente activo */
 .btn-siguiente.activo:hover {
-    background-color: #3a1045; /* Morado más oscuro */
+    background-color: #076461; /* Verde oscuro */
 }
 
 /* ========== MEDIA QUERIES (PARA INDEX4) ========== */
