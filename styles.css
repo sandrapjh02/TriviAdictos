@@ -14,10 +14,36 @@ body {
 /* Contenedor principal que agrupa logo y botón */
 .container {
     display: flex;
-    flex-direction: column; /* Apila elementos verticalmente */
-    align-items: center; /* Centra elementos horizontalmente */
-    text-align: center; /* Alinea texto al centro */
-    gap: 20px; /* Espacio entre elementos hijos */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;  /* Centra el texto */
+    gap: 20px; /* Espaciado entre los elementos */
+        
+}
+
+/* Contenedor-Ingreso (Index2)*/
+.container-login{
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Label | Input (flexible) | Botón */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+/* Estilos para el Header en (Index3)*/
+#header-amarillo-menu{
+    display: flex; /* Usa flexbox para simplificar la estructura */
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: center; /* Centra verticalmente */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ECBA09;
+    z-index: 500; /* Asegura que el header esté por encima de otros elementos */
+    padding: 0 10px; /* Solo padding horizontal */
 }
 
 /* Estilo del logo principal */
@@ -40,6 +66,7 @@ button {
     margin-top: auto; /* Empuja el botón hacia abajo */
     transition: background 0.3s; /* Transición suave al hover */
     align-items: center;
+    
 }
 
 /* Efecto hover para botones */
