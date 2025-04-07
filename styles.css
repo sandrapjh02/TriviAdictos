@@ -14,10 +14,36 @@ body {
 /* Contenedor principal que agrupa logo y botón */
 .container {
     display: flex;
-    flex-direction: column; /* Apila elementos verticalmente */
-    align-items: center; /* Centra elementos horizontalmente */
-    text-align: center; /* Alinea texto al centro */
-    gap: 20px; /* Espacio entre elementos hijos */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;  /* Centra el texto */
+    gap: 20px; /* Espaciado entre los elementos */
+        
+}
+
+/* Contenedor-Ingreso (Index2)*/
+.container-login{
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Label | Input (flexible) | Botón */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+/* Estilos para el Header en (Index3)*/
+#header-amarillo-menu{
+    display: flex; /* Usa flexbox para simplificar la estructura */
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: center; /* Centra verticalmente */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ECBA09;
+    z-index: 500; /* Asegura que el header esté por encima de otros elementos */
+    padding: 0 10px; /* Solo padding horizontal */
 }
 
 /* Estilo del logo principal */
@@ -40,6 +66,7 @@ button {
     margin-top: auto; /* Empuja el botón hacia abajo */
     transition: background 0.3s; /* Transición suave al hover */
     align-items: center;
+    
 }
 
 /* Efecto hover para botones */
@@ -110,7 +137,7 @@ button:hover {
 /* ========== ESTILOS PARA INDEX3.HTML (CATEGORÍAS) ========== */
 /* Fondo blanco para el área de contenido */
 .pagina-blanca {
-    background-color: white !important; /* Fuerza el fondo blanco */
+    background-color:#ED3C80 !important; /* Fuerza el fondo blanco */
 }
 
 /* Header amarillo fijo en la parte superior */
@@ -209,7 +236,7 @@ button:hover {
 
     .titulo-tema-favorito {
     text-align: center;
-    color:#ED3C80;
+    color:white;
     font-size: 200%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 8%;
@@ -258,14 +285,26 @@ button:hover {
     padding: 0 20px;
     box-sizing: border-box; /* Incluye padding en el ancho */
 }
-
+.titulo-historia{
+    font-size: 200%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    margin: 0;
+    position: absolute;
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste fino para centrar */
+}
 /* Logo en el header de preguntas */
 .logo-encabezado-preguntas img {
     height: 80px; /* Más pequeño que en otras páginas */
     display: block;
     margin-left: 20px;
 }
-
+.logo-encabezado-preguntas {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el título */
+}
 /* Contenedor de puntaje y temporizador */
 .puntaje-tiempo {
     display: flex;
@@ -330,7 +369,8 @@ button:hover {
 
 /* Estilo de cada opción de respuesta */
 .opcion {
-    background-color: white;
+    background-color:#ffffff;
+    color:#49007E;
     border: none; /* Sin borde por defecto */
     border-radius: 12px; /* Esquinas redondeadas */
     padding: 20px; /* Espaciado interno */
@@ -338,11 +378,12 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s; /* Transición para hover y selección */
     box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Sombra suave */
+
 }
 
 /* Efecto hover para opciones */
 .opcion:hover {
-    background-color: #f8f8f8; /* Fondo gris muy claro */
+    background-color:white; /* Fondo gris muy claro */
     transform: translateY(-3px); /* Efecto de levantar */
     box-shadow: 0 5px 10px rgba(0,0,0,0.15); /* Sombra más pronunciada */
 }
@@ -375,13 +416,12 @@ button:hover {
 
 /* Botón para siguiente pregunta */
 .btn-siguiente {
-    background-color: #5d1b6a; /* Morado */
+    background-color: #076461; /* Verde oscuro */
     color: white;
     padding: 12px 30px; /* Espaciado interno */
     font-size: 18px;
     border-radius: 25px; /* Bordes muy redondeados */
     border: none;
-    opacity: 0.7; /* Parcialmente transparente */
     transition: all 0.3s; /* Transición suave */
     cursor: default; /* Cursor normal (no clickeable) */
 }
@@ -394,7 +434,7 @@ button:hover {
 
 /* Efecto hover para botón siguiente activo */
 .btn-siguiente.activo:hover {
-    background-color: #3a1045; /* Morado más oscuro */
+    background-color: #076461; /* Verde oscuro */
 }
 
 /* ========== MEDIA QUERIES (PARA INDEX4) ========== */
@@ -432,4 +472,95 @@ button:hover {
     .pregunta-box h2 {
         font-size: 20px;
     }
+}
+
+/* ====== PÁGINA DE PUNTAJE ====== */
+.pagina-azul {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.resultados-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.titulo-resultados {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.texto-resultados {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.btn-jugar-otra {
+    background-color: #ECBA09;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-jugar-otra:hover {
+    background-color: #FFD700;
+}
+
+/* ====== BOTÓN INICIO HEADER ====== */
+.btn-inicio-header {
+    background-color: #076461;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-inicio-header:hover {
+    background-color: #05403e;
+}
+
+/* ====== AJUSTES PARA FEEDBACK ====== */
+#mensaje-feedback.correcto {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#mensaje-feedback.incorrecto {
+    color: #F44336;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ====== CLASES PARA TEMPORIZADOR ====== */
+.tiempo.urgente {
+    color: #FF5722;
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }

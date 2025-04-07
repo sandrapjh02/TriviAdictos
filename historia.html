@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina-rosa">
+    <header class="header-preguntas">
+        <div class="logo-encabezado-preguntas">
+            <img src="./img/Logo.png" alt="Logo Triviadictos">
+        </div>
+        <h1 class="titulo-historia">HISTORIA</h1>
+        <div class="puntaje-tiempo">
+            <span class="puntaje">⭐ 0</span>
+       
+        </div>
+        <button class="btn-salir">Salir</button>
+    </header>
+
+    <main class="contenedor-pregunta">
+        <div class="pregunta-box">
+            <h2 id="texto-pregunta">¿Quién descubrió América en 1492?</h2>
+        </div>
+
+        <div class="opciones">
+            <button class="opcion">Cristóbal Colón</button>
+            <button class="opcion">Vasco da Gama</button>
+            <button class="opcion">Fernando de Magallanes</button>
+            <button class="opcion">Hernán Cortés</button>
+        </div>
+
+        <div class="feedback">
+            <p id="mensaje-feedback"></p>
+            <button id="siguiente-btn" class="btn-siguiente" disabled>Siguiente</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
