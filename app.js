@@ -218,11 +218,11 @@ if (document.querySelector('body').classList.contains('pagina-azul')) {
             window.location.href = "Index3.html";
         });
     } else {
-        window.location.href = "Index1.html";
+        window.location.href = "Index.html";
     }
 }
 
 // Dentro del if (document.querySelector('body').classList.contains('pagina-azul'))
 document.querySelector('.boton-inicio-header').addEventListener('click', () => {
-    window.location.href = "index1.html";
+    window.location.href = "index.html";
 });
